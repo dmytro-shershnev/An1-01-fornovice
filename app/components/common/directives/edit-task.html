@@ -1,0 +1,38 @@
+<form novalidate name="editTask">
+  
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description"
+    		class="form-control"
+			ng-model="$ctrl.editItem.action"">
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="$ctrl.editItem.done"> Checkbox
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Responsible</label>
+    <input type="text" name="responsible" id="responsible"
+    		class="form-control"
+			ng-model="$ctrl.editItem.responsible"">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Est. Hours</label>
+    <input type="number" name="estimate" id="estimate"
+    		class="form-control"
+			ng-model="$ctrl.editItem.estimate"">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Notes</label>
+    <input type="text" name="notes" id="notes"
+    		class="form-control"
+			ng-model="$ctrl.editItem.notes"">
+  </div>
+
+  <button type="reset">Reset form</button>
+</form>
