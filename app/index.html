@@ -42,6 +42,7 @@
                 <label>
                     <input type="checkbox" ng-model="$ctrl.showComplete">Show Complete
                     <button class="btn btn-danger"
+                            ng-show="$ctrl.isCompletedItems($ctrl.todo.items) > 0 && $ctrl.showComplete"
                             ng-click="$ctrl.removeCompletedItems($ctrl.todo.items)">Remove all completed</button>
                 </label>
             </div>

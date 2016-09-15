@@ -12,6 +12,7 @@
             removeCompletedItems,
             edit,
             incompleteCount,
+            isCompletedItems,
             warningLevel
         };
 
@@ -39,7 +40,7 @@
         function edit(items, editItem) {
             this.editItem = editItem;
         }
-        
+
         function removeItem(items, delItem) {
             let resArr = items;
 
@@ -70,6 +71,18 @@
             });
 
             return count;
+        }
+
+        function isCompletedItems(items) {
+            let completed = 0;
+
+            angular.forEach(items, (item) => {
+                if (item.done) {
+                    completed++;
+                }
+            });
+
+            return completed;
         }
 
         function warningLevel(items) {

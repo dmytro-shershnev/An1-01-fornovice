@@ -23,7 +23,7 @@
 
 	function runApp($http, model) {
 		$http
-			.get("todo.json")
+			.get("data/todo.json")
 			.then(response => model.items = response.data);
 	}
 
