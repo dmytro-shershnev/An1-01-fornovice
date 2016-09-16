@@ -11,6 +11,7 @@
             removeItem,
             removeCompletedItems,
             edit,
+            save,
             incompleteCount,
             isCompletedItems,
             warningLevel
@@ -37,8 +38,20 @@
             }
         }
 
-        function edit(items, editItem) {
+        function edit(editItem) {
+            angular.forEach(this.todo.items, (item) => {
+                if (item.editMode) {
+                    item.editMode = false;
+                }
+            });
+
+            editItem.editMode = true;
+
             this.editItem = editItem;
+        }
+
+        function save(saveItem) {
+            saveItem.editMode = false;
         }
 
         function removeItem(items, delItem) {

@@ -14,7 +14,10 @@
 	<tbody>
 		<!-- <tr ng-repeat="item in $ctrl.todo.items | filter: {done: false} | orderBy: 'action'"> -->
 		<tr ng-repeat="item in $ctrl.todo.items | checkedItems: $ctrl.showComplete | orderBy: 'action'">
-			<td>{{item.action}}</td>
+			<td>
+				<span ng-hide="item.editMode">{{item.action}}</span>
+				<input ng-show="item.editMode" type="text" value="{{item.action}}" ng-model="$ctrl.editItem.action">
+			</td>
 			<td><input type="checkbox" ng-model="item.done"></td>
 			<td>{{item.deadline}}</td>
 			<td>{{item.responsible}}</td>
@@ -23,8 +26,14 @@
 			<td>{{item.done ? 'Yes' : 'No'}}</td>
 			<td class="text-right">
 				<button type="button"
+						class="btn btn-success"
+						ng-show="item.editMode"
+						ng-click="$ctrl.save(item)">
+					<span class="glyphicon glyphicon-saved" aria-hidden="true" title="Save"></span>
+				</button>
+				<button type="button"
 						class="btn btn-primary"
-						ng-click="$ctrl.edit($ctrl.todo.items, item)">
+						ng-click="$ctrl.edit(item)">
 					<span class="glyphicon glyphicon-edit" aria-hidden="true" title="Edit"></span>
 				</button>
 				<button type="button"

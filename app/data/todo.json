@@ -5,7 +5,8 @@
 		"deadline": "09/10/2016",
 		"responsible": "User 1",
 		"estimate": 1,
-		"notes" : "Notes 1"
+		"notes" : "Notes 1",
+		"editMode": false
 	},
 	{
 		"action": "Create...",
@@ -13,7 +14,8 @@
 		"deadline": "10/10/2016",
 		"responsible": "User 2",
 		"estimate": 2,
-		"notes" : "Notes 2"
+		"notes" : "Notes 2",
+		"editMode": false
 	},
 	{
 		"action": "Edit...",
@@ -21,7 +23,8 @@
 		"deadline": "11/11/2016",
 		"responsible": "User 3",
 		"estimate": 3,
-		"notes" : "Notes 3"
+		"notes" : "Notes 3",
+		"editMode": false
 	},
 	{
 		"action": "Delete...",
@@ -29,6 +32,7 @@
 		"deadline": "12/10/2016",
 		"responsible": "User 4",
 		"estimate": 4,
-		"notes" : "Notes 4"
+		"notes" : "Notes 4",
+		"editMode": false
 	}
 ]
