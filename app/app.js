@@ -15,10 +15,6 @@
 		let $ctrl = this;
 
 		$ctrl.todo = model;
-
-		Object.assign($ctrl, todoService);
-
-		$ctrl.showComplete = true; 
 	}
 
 	function runApp($http, model) {

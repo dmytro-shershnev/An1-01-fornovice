@@ -1,47 +1,56 @@
-<table class="table table-striped">
-	<thead>
-		<tr>
-			<th>Description</th>
-			<th>Checkbox</th>
-			<th>Deadline</th>
-			<th>Responsible</th>
-			<th>Est. Hours</th>
-			<th>Notes</th>
-			<th>Done</th>
-			<th class="text-right">Commands</th>
-		</tr>
-	</thead>
-	<tbody>
-		<!-- <tr ng-repeat="item in $ctrl.todo.items | filter: {done: false} | orderBy: 'action'"> -->
-		<tr ng-repeat="item in $ctrl.todo.items | checkedItems: $ctrl.showComplete | orderBy: 'action'">
-			<td>
-				<span ng-hide="item.editMode">{{item.action}}</span>
-				<input ng-show="item.editMode" type="text" value="{{item.action}}" ng-model="$ctrl.editItem.action">
-			</td>
-			<td><input type="checkbox" ng-model="item.done"></td>
-			<td>{{item.deadline}}</td>
-			<td>{{item.responsible}}</td>
-			<td>{{item.estimate}}</td>
-			<td>{{item.notes}}</td>
-			<td>{{item.done ? 'Yes' : 'No'}}</td>
-			<td class="text-right">
-				<button type="button"
-						class="btn btn-success"
-						ng-show="item.editMode"
-						ng-click="$ctrl.save(item)">
-					<span class="glyphicon glyphicon-saved" aria-hidden="true" title="Save"></span>
-				</button>
-				<button type="button"
-						class="btn btn-primary"
-						ng-click="$ctrl.edit(item)">
-					<span class="glyphicon glyphicon-edit" aria-hidden="true" title="Edit"></span>
-				</button>
-				<button type="button"
-						class="btn btn-danger"
-						ng-click="$ctrl.removeItem($ctrl.todo.items, item)">
-					<span class="glyphicon glyphicon-trash"	aria-hidden="true" title="Delete"></span>
-				</button>
-			</td>
-		</tr>
-	</tbody>
-</table>
+<div class="panel-body" ng-controller="Table as first">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Description</th>
+				<th>Checkbox</th>
+				<th>Deadline</th>
+				<th>Responsible</th>
+				<th>Est. Hours</th>
+				<th>Notes</th>
+				<th>Done</th>
+				<th class="text-right">Commands</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- <tr ng-repeat="item in $ctrl.todo.items | filter: {done: false} | orderBy: 'action'"> -->
+			<tr ng-repeat="item in first.todo.items | checkedItems: first.showComplete | orderBy: 'action'">
+				<td>
+					<span ng-hide="item.editMode">{{item.action}}</span>
+					<input ng-show="item.editMode" type="text" value="{{item.action}}" ng-model="first.editItem.action">
+				</td>
+				<td><input type="checkbox" ng-model="item.done"></td>
+				<td>{{item.deadline}}</td>
+				<td>{{item.responsible}}</td>
+				<td>{{item.estimate}}</td>
+				<td>{{item.notes}}</td>
+				<td>{{item.done ? 'Yes' : 'No'}}</td>
+				<td class="text-right">
+					<button type="button"
+							class="btn btn-success"
+							ng-show="item.editMode"
+							ng-click="first.save(item)">
+						<span class="glyphicon glyphicon-saved" aria-hidden="true" title="Save"></span>
+					</button>
+					<button type="button"
+							class="btn btn-primary"
+							ng-click="first.edit(item)">
+						<span class="glyphicon glyphicon-edit" aria-hidden="true" title="Edit"></span>
+					</button>
+					<button type="button"
+							class="btn btn-danger"
+							ng-click="first.removeItem(first.todo.items, item)">
+						<span class="glyphicon glyphicon-trash"	aria-hidden="true" title="Delete"></span>
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<label>
+	    <input type="checkbox" ng-model="first.showComplete">Show Complete
+	    <button class="btn btn-danger"
+	            ng-show="first.isCompletedItems(first.todo.items) > 0 && first.showComplete"
+	            ng-click="first.removeCompletedItems(first.todo.items)">Remove all completed</button>
+	</label>
+</div>

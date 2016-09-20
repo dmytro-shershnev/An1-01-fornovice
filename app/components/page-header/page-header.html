@@ -1,12 +1,12 @@
-<div class="page-header">
+<div class="page-header" ng-controller="Header as third">
 	<h1>
-		<img class="photo" ng-src="{{::$ctrl.todo.userPhoto}}">
-		{{::$ctrl.todo.user}}'s To Do List
+		<img class="photo" ng-src="{{::third.todo.userPhoto}}">
+		{{::third.todo.user}}'s To Do List
 		<span
 			class="label label-default" 
-			ng-hide="$ctrl.incompleteCount($ctrl.todo.items) === 0"
-			ng-class="$ctrl.warningLevel($ctrl.todo.items)">
-			{{$ctrl.incompleteCount($ctrl.todo.items)}}
+			ng-hide="third.incompleteCount(third.todo.items) === 0"
+			ng-class="third.warningLevel(third.todo.items)">
+			{{third.incompleteCount(third.todo.items)}}
 		</span>
 	</h1>
 </div>
