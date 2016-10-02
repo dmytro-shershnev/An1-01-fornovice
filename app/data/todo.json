@@ -1,83 +1,26 @@
 [
-	{
-		"action": "Estimate...",
-		"done": false,
-		"deadline": "09/10/2016",
-		"responsible": "User 1",
-		"estimate": 1,
-		"notes" : "Notes 1",
-		"editMode": false
-	},
-	{
-		"action": "Create...",
-		"done": false,
-		"deadline": "10/10/2016",
-		"responsible": "User 2",
-		"estimate": 2,
-		"notes" : "Notes 2",
-		"editMode": false
-	},
-	{
-		"action": "Edit...",
-		"done": true,
-		"deadline": "11/11/2016",
-		"responsible": "User 3",
-		"estimate": 3,
-		"notes" : "Notes 3",
-		"editMode": false
-	},
-	{
-		"action": "Delete...",
-		"done": false,
-		"deadline": "12/10/2016",
-		"responsible": "User 4",
-		"estimate": 4,
-		"notes" : "Notes 4",
-		"editMode": false
-	},
-	{
-		"action": "Task #1",
-		"done": false,
-		"deadline": "12/10/2016",
-		"responsible": "User 1",
-		"estimate": 4,
-		"notes" : "Notes 1",
-		"editMode": false
-	},
-	{
-		"action": "Task #2",
-		"done": false,
-		"deadline": "12/10/2016",
-		"responsible": "User 2",
-		"estimate": 4,
-		"notes" : "Notes 2",
-		"editMode": false
-	},
-	{
-		"action": "Task #3",
-		"done": false,
-		"deadline": "12/10/2016",
-		"responsible": "User 3",
-		"estimate": 4,
-		"notes" : "Notes 3",
-		"editMode": false
-	},
-	{
-		"action": "Task #4",
-		"done": false,
-		"deadline": "12/10/2016",
-		"responsible": "User 4",
-		"estimate": 4,
-		"notes" : "Notes 4",
-		"editMode": false
-	},
-	{
-		"action": "Task #5",
-		"done": false,
-		"deadline": "12/10/2016",
-		"responsible": "User 5",
-		"estimate": 4,
-		"notes" : "Notes 5",
-		"editMode": false
-	}
+	{"action": "Estimate...", "done": false, "deadline": "09/10/2016", "responsible": "User 1", "estimate": 1, "notes" : "Notes 1", "editMode": false},
+	{"action": "Create...", "done": false, "deadline": "10/10/2016", "responsible": "User 2", "estimate": 2, "notes" : "Notes 2", "editMode": false},
+	{"action": "Edit...", "done": true, "deadline": "11/11/2016", "responsible": "User 3", "estimate": 3, "notes" : "Notes 3", "editMode": false},
+	{"action": "Delete...", "done": false, "deadline": "12/10/2016", "responsible": "User 4", "estimate": 4, "notes" : "Notes 4", "editMode": false},
+	{"action": "Task #1", "done": false, "deadline": "01/10/2016", "responsible": "User 1", "estimate": 1, "notes" : "Notes 1", "editMode": false},
+	{"action": "Task #2", "done": false, "deadline": "02/10/2016", "responsible": "User 2", "estimate": 2, "notes" : "Notes 2", "editMode": false},
+	{"action": "Task #3", "done": false, "deadline": "03/10/2016", "responsible": "User 3", "estimate": 3, "notes" : "Notes 3", "editMode": false},
+	{"action": "Task #4", "done": false, "deadline": "04/10/2016", "responsible": "User 4", "estimate": 4, "notes" : "Notes 4","editMode": false},
+	{"action": "Task #5", "done": false, "deadline": "05/10/2016", "responsible": "User 5", "estimate": 5, "notes" : "Notes 5", "editMode": false},
+	{"action": "Task #6", "done": false, "deadline": "06/10/2016", "responsible": "User 6", "estimate": 6, "notes" : "Notes 6", "editMode": false},
+	{"action": "Task #7", "done": false, "deadline": "07/10/2016", "responsible": "User 7", "estimate": 7, "notes" : "Notes 7", "editMode": false},
+	{"action": "Task #8", "done": false, "deadline": "08/10/2016", "responsible": "User 8", "estimate": 8, "notes" : "Notes 8", "editMode": false},
+	{"action": "Task #9", "done": false, "deadline": "09/10/2016", "responsible": "User 9", "estimate": 9, "notes" : "Notes 9", "editMode": false},
+	{"action": "Task #10", "done": false, "deadline": "10/10/2016", "responsible": "User 10", "estimate": 10, "notes" : "Notes 10", "editMode": false},
+	{"action": "Task #11", "done": false, "deadline": "11/10/2016", "responsible": "User 11", "estimate": 11, "notes" : "Notes 11", "editMode": false},
+	{"action": "Task #12", "done": false, "deadline": "12/10/2016", "responsible": "User 12", "estimate": 12, "notes" : "Notes 12", "editMode": false},
+	{"action": "Task #13", "done": false, "deadline": "13/10/2016", "responsible": "User 13", "estimate": 13, "notes" : "Notes 13", "editMode": false},
+	{"action": "Task #14", "done": false, "deadline": "14/10/2016", "responsible": "User 14", "estimate": 14, "notes" : "Notes 14", "editMode": false},
+	{"action": "Task #15", "done": false, "deadline": "15/10/2016", "responsible": "User 15", "estimate": 15, "notes" : "Notes 15", "editMode": false},
+	{"action": "Task #16", "done": false, "deadline": "16/10/2016", "responsible": "User 16", "estimate": 16, "notes" : "Notes 16", "editMode": false},
+	{"action": "Task #17", "done": false, "deadline": "17/10/2016", "responsible": "User 17", "estimate": 17, "notes" : "Notes 17", "editMode": false},
+	{"action": "Task #18", "done": false, "deadline": "18/10/2016", "responsible": "User 18", "estimate": 18, "notes" : "Notes 18", "editMode": false},
+	{"action": "Task #19", "done": false, "deadline": "19/10/2016", "responsible": "User 19", "estimate": 19, "notes" : "Notes 19", "editMode": false},
+	{"action": "Task #20", "done": false, "deadline": "20/10/2016", "responsible": "User 20", "estimate": 20, "notes" : "Notes 20", "editMode": false}
 ]
