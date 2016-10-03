@@ -19,10 +19,9 @@
         //console.log($ctrl.total); // => 3
 
         // Pagination
-        $ctrl.optionsList = [5, 10, 15, 20];
-
+        $ctrl.options = [5, 10, 15, 20];
         $ctrl.currentPage = 0;
-        $ctrl.pageSize = 5;
+        $ctrl.pageSize = $ctrl.options[0];
 
         $ctrl.getPageData = getPageData;
         $ctrl.numberOfPages = numberOfPages;
