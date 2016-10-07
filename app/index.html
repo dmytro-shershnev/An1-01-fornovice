@@ -13,6 +13,17 @@
 
         <page-header></page-header>
 
+        <!-- Task 06: (Subtask-02) "Create Directives, add nessessary attributes." -->
+        <p>Task 06: (Subtask-02) "Create Directives, add nessessary attributes."</p>
+        <menu>
+            <menu-item value="Task"></menu-item>
+            <menu-item value="Users"></menu-item>
+            <menu-group value="Settings">
+                <menu-item value="General"></menu-item>
+                <menu-item value="Cost"></menu-item>
+            </menu-group>
+        </menu>
+
         <todo-form></todo-form>
 
         <div class="panel panel-primary">
@@ -23,6 +34,9 @@
             <todo-list></todo-list>
 
         </div>
+
+
+
     </div>
 
     <script src="vendor/angular/angular.min.js"></script>
@@ -34,6 +48,8 @@
 
     <script src="components/common/services/common-services.module.js"></script>
     <script src="components/common/services/todo.service.js"></script>
+    
+    <script src="components/common/directives/common-directives.module.js"></script>
 
     <script src="components/common/common.module.js"></script>
 
