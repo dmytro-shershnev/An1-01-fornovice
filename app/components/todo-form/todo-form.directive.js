@@ -7,7 +7,11 @@
 
     function todoForm() {
         return {
-            templateUrl: "components/todo-form/todo-form.html"
+            restrict: "E",
+            scope: {},
+            templateUrl: "components/todo-form/todo-form.html",
+            controllerAs: "second",
+            controller: "Form"
         };
     }
 })();

@@ -7,7 +7,11 @@
 
     function pageHeader() {
         return {
-            templateUrl: "components/page-header/page-header.html"
+            restrict: "E",
+            scope: {},
+            templateUrl: "components/page-header/page-header.html",
+            controllerAs: "third",
+            controller: "Header"
         };
     }
 })();

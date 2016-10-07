@@ -7,7 +7,11 @@
 
     function todoList() {
         return {
-            templateUrl: "components/todo-list/todo-list.html"
+            restrict: "E",
+            scope: {},
+            templateUrl: "components/todo-list/todo-list.html",
+            controllerAs: "first",
+            controller: "Table"
         };
     }
 })();
