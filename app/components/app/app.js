@@ -17,10 +17,10 @@
 		$ctrl.todo = model;
 	}
 
-	function runApp($http, model) {
-		$http
-			.get("data/todo.json")
-			.then(response => model.items = response.data);
+	function runApp(model, tasksService) {
+		tasksService.getData().then((data) => {
+			model.items = data;
+		});
 	}
 
 	// bootstrap app
