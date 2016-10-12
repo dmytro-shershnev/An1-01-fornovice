@@ -12,7 +12,7 @@
             let resArr = [];
 
             if (angular.isArray(items) && search) {
-                angular.forEach(items, (item) => {
+                items.filter((item) => {
                     if (item.action.indexOf(search) >= 0 || item.responsible.indexOf(search) >= 0) {
                         resArr.push(item);
                     }
