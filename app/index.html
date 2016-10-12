@@ -10,19 +10,7 @@
 </head>
 <body ng-cloak>
     <div class="container">
-
         <page-header></page-header>
-
-        <!-- Task 06: (Subtask-02) "Create Directives, add nessessary attributes." -->
-        <p>Task 06: (Subtask-02) "Create Directives, add nessessary attributes."</p>
-        <menu>
-            <menu-item value="Task"></menu-item>
-            <menu-item value="Users"></menu-item>
-            <menu-group value="Settings">
-                <menu-item value="General"></menu-item>
-                <menu-item value="Cost"></menu-item>
-            </menu-group>
-        </menu>
 
         <todo-form></todo-form>
 
@@ -32,16 +20,12 @@
             </div>
 
             <todo-list></todo-list>
-
         </div>
-
-
-
     </div>
 
     <script src="vendor/angular/angular.min.js"></script>
     <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="app.js"></script>
+    <script src="components/app/app.js"></script>
 
     <script src="components/common/filters/common-filters.module.js"></script>
     <script src="components/common/filters/checked-items.filter.js"></script>
@@ -53,14 +37,11 @@
 
     <script src="components/common/common.module.js"></script>
 
-    <script src="components/page-header/page-header.directive.js"></script>
-    <script src="components/page-header/page-header.controller.js"></script>
+    <script src="components/page-header/page-header.component.js"></script>
 
-    <script src="components/todo-form/todo-form.directive.js"></script>
-    <script src="components/todo-form/todo-form.controller.js"></script>
+    <script src="components/todo-form/todo-form.component.js"></script>
 
-    <script src="components/todo-list/todo-list.directive.js"></script>
-    <script src="components/todo-list/todo-list.controller.js"></script>
+    <script src="components/todo-list/todo-list.component.js"></script>
     <script src="components/todo-list/todo-list.filter.js"></script>
 </body>
 </html>
